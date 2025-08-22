@@ -1,0 +1,30 @@
+.servicesSection {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+  color: #ccc;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.serviceCard h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}

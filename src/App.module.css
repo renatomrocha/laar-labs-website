@@ -1,0 +1,12 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Make the app container fill the entire viewport height */
+  overflow: hidden; /* Prevent the body from scrolling */
+}
+
+.contentArea {
+  flex-grow: 1; /* Allow this area to grow and fill available space */
+  overflow-y: auto; /* Make ONLY this area scrollable */
+  padding: 2rem; /* Add some breathing room for the content */
+}

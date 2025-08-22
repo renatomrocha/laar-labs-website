@@ -1,0 +1,54 @@
+.contactContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.headerSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.headerSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2e2b2b;
+}
+
+.formSection {
+  margin-bottom: 3rem;
+}
+
+.contactInfoSection {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.contactInfoSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color, #2ecc71);
+}
+
+.contactInfoSection p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.contactInfoSection a {
+  color: var(--secondary-color, #2ecc71);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactInfoSection a:hover {
+  color: #fff;
+}

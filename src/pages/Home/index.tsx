@@ -2,10 +2,14 @@ import React from "react";
 import Hero from "../../components/common/Hero";
 import styles from "./Home.module.css";
 import heroImage from "../../assets/images/home.jpg";
+import fullLogo from "../../assets/images/logo.png"; // <-- full logo with text
 
 const Home: React.FC = () => {
   return (
-    <div className={styles.homeContainer}>
+    <div className="">
+      <div className={styles.logoSection}>
+        <img src={fullLogo} alt="LAAR LABS Logo" className={styles.mainLogo} />
+      </div>
       <Hero
         title="Innovating in Software, Mobile, AI & Robotics"
         subtitle="LAAR-LABS is a joint venture delivering end-to-end technology solutions — from web and mobile apps to intelligent hardware and robotics. We combine engineering expertise with visionary thinking to help businesses innovate, scale, and lead in the digital age."
@@ -13,22 +17,20 @@ const Home: React.FC = () => {
         primaryCta={{ text: "Explore Our Solutions", link: "/about" }}
         secondaryCta={{ text: "Contact Us", link: "/contact" }}
       />
-
+      {/* Add prominent logo */}
       {/* Mission */}
-      <div className={styles.contentSection}>
+      <div className={styles.headerSection}>
         <h2>Our Mission</h2>
         <p>
           At LAAR-LABS, our mission is to bridge the gap between software and
           hardware innovation. We provide cutting-edge solutions in artificial
           intelligence, robotics, and modern software development.
           <br />
-          <br />
           By combining engineering expertise with visionary thinking, we empower
           companies to solve complex challenges, accelerate growth, and shape a
           smarter future.
         </p>
       </div>
-
       {/* Services */}
       <div className={styles.servicesSection}>
         <h2>What We Do</h2>

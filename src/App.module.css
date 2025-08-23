@@ -8,5 +8,5 @@
 .contentArea {
   flex-grow: 1; /* Allow this area to grow and fill available space */
   overflow-y: auto; /* Make ONLY this area scrollable */
-  padding: 2rem; /* Add some breathing room for the content */
+  padding: 0rem 0rem;
 }

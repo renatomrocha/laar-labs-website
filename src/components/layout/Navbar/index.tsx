@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import logo from "../../../assets/images/logo-no-name.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -16,10 +17,13 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      {/* Brand */}
+      {/* Brand with Logo */}
       <div className={styles.navbarBrand}>
-        <NavLink to="/" onClick={closeMobileMenu}>
-          LAAR-LABS<span className={styles.cursor}>_</span>
+        <NavLink to="/" onClick={closeMobileMenu} className={styles.brandLink}>
+          <img src={logo} alt="LAAR LABS Logo" className={styles.logo} />
+          <span className={styles.brandText}>
+            LAAR-LABS<span className={styles.cursor}>_</span>
+          </span>
         </NavLink>
       </div>
 

@@ -26,10 +26,21 @@
 
 .contactInfoSection {
   text-align: center;
-  background-color: #1e1e1e;
-  padding: 2rem;
+  background-color: #d8d7d7;
+  padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid #333;
+}
+
+.contactEmail {
+  color: #bebebe; /* softer gray for subtlety */
+  text-decoration: none;
+  font-size: bold;
+  transition: color 0.3s ease;
+}
+
+.contactEmail:hover {
+  color: #fff; /* highlight on hover */
 }
 
 .contactInfoSection h2 {

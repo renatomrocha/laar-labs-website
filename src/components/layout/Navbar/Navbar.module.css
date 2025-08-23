@@ -17,8 +17,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  background-color: rgba(37, 37, 38, 0.95);
-  border-bottom: 1px solid #333;
+  background-color: rgba(203, 203, 212, 0.95);
+  border-bottom: 1px solid #fccf06;
   height: 56px;
   flex-shrink: 0;
   backdrop-filter: blur(6px);
@@ -26,7 +26,7 @@
 }
 
 .navbarBrand a {
-  color: #ccc;
+  color: #cccccc8f;
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bold;
@@ -56,7 +56,7 @@
 }
 
 .navLink {
-  color: #aaa;
+  color: #c49b16;
   text-decoration: none;
   padding: 0 1.5rem;
   height: 100%;
@@ -67,14 +67,34 @@
 }
 
 .navLink:hover {
-  background-color: #333;
+  background-color: #c49b16;
   color: #fff;
 }
 
 .activeLink {
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: #c49b16;
   border-top: 2px solid var(--secondary-color);
+}
+
+.logo {
+  height: 32px; /* Adjust as needed */
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brandText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #c49b16;
 }
 
 /* --- Hamburger Icon --- */
@@ -92,7 +112,7 @@
 .bar {
   width: 24px;
   height: 3px;
-  background-color: #ccc;
+  background-color: #c49b16;
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -115,7 +135,7 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 56px);
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -143,19 +163,19 @@
     width: 100%;
     padding: 1rem;
     font-size: 1.1rem;
-    color: #ccc;
+    color: #c49b16;
     border: none;
     border-radius: 8px;
     transition: background-color 0.25s ease, color 0.25s ease;
   }
 
   .navLink:hover {
-    background-color: #333;
+    background-color: #838080;
     color: #fff;
   }
 
   .activeLink {
-    background-color: var(--secondary-color, #2ecc71);
+    background-color: var(--secondary-color, #ffc107);
     color: #fff;
   }
 

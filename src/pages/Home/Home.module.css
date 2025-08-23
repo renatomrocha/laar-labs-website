@@ -24,7 +24,34 @@
   margin-bottom: 0.75rem;
 }
 
+.logoSection {
+  display: flex;
+  justify-content: center;
+}
+
+.mainLogo {
+  max-width: 320px; /* adjust size as needed */
+  height: auto;
+}
+
 .serviceCard:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.headerSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.headerSection p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2e2b2b;
 }

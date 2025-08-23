@@ -21,16 +21,6 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Optional Contact Info */}
-      <section className={styles.contactInfoSection}>
-        <h2>Other Ways to Reach Us</h2>
-        <p>
-          Email: <a href="mailto:hello@laarlabs.com">hello@laarlabs.com</a>
-        </p>
-        <p>
-          Phone: <a href="tel:+1234567890">+1 234 567 890</a>
-        </p>
-        <p>Address: 123 Innovation Drive, Tech City</p>
-      </section>
     </div>
   );
 };

@@ -72,8 +72,8 @@ const About: React.FC = () => {
           />
           <Card
             imageUrl={teamMember2}
-            title="John Cena"
-            description="Co-Founder | Robotics & Hardware Expert"
+            title="Luís Almeida"
+            description="Co-Founder | Robotics & Software Engineer"
           />
         </div>
       </section>

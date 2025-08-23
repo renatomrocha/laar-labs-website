@@ -18,9 +18,9 @@
   grid-template-columns: 1fr auto 1fr; /* left | center | right */
   align-items: center;
   padding: 0 2rem;
-  background-color: #252526;
-  border-top: 1px solid #3c3c3c;
-  height: 48px;
+  background-color: rgba(203, 203, 212, 0.95);
+  border-top: 1px solid #fccf06;
+  height: 56px;
   font-size: 0.8rem;
   letter-spacing: 1px;
   flex-shrink: 0;
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   font-weight: bold;
-  color: #83dda9; /* operational green */
+  color: #c49b16; /* operational green */
 }
 
 .statusLight {
@@ -39,7 +39,7 @@
   height: 12px;
   margin-right: 10px;
   border-radius: 50%;
-  background: #83dda9; /* green dot */
+  background: #73c416; /* green dot */
   animation: pulse 2s infinite ease-in-out;
 }
 
@@ -49,7 +49,8 @@
 
 .copyright {
   justify-self: center; /* stays perfectly centered */
-  color: #e7ecd1;
+  color: #c49b16;
+  font-weight: bold;
 }
 
 .socials {
@@ -57,16 +58,17 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  font-weight: bold;
 }
 .socialLink {
-  color: #e7ecd1;
+  color: #c49b16;
   font-size: 1.2rem;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .socialLink:hover,
 .socialLink:focus {
-  color: #cef51f;
+  color: #e7ecd1;
   transform: scale(1.1);
   outline: none;
 }

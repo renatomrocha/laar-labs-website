@@ -71,6 +71,43 @@ const ContactForm: React.FC = () => {
       </div>
 
       <div className={styles.formGroup}>
+        <label className={styles.label}>Type of Request</label>
+        <small className={styles.toggleNote}>
+          You can select one or more options if your project involves multiple
+          areas.
+        </small>
+        <div className={styles.toggleGroup}>
+          {[
+            "Consulting",
+            "Software Solution",
+            "Hardware Solution",
+            "AI / Robotics Solution",
+            "Other",
+          ].map((type) => (
+            <label key={type} className={styles.toggleButton}>
+              <input
+                type="checkbox"
+                name="requestType"
+                value={type.toLowerCase().replace(/\s+/g, "-")}
+              />
+              <span>{type}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.formGroup}>
+        <label htmlFor="goal" className={styles.label}>
+          What would you like from us?
+        </label>
+        <select id="goal" name="goal" className={styles.selectInput} required>
+          <option value="budget">Receive a Budget / Quote</option>
+          <option value="meeting">Schedule a Meeting</option>
+          <option value="other">Other / Ask a Question</option>
+        </select>
+      </div>
+
+      <div className={styles.formGroup}>
         <label htmlFor="message" className={styles.label}>
           Message
         </label>
@@ -79,7 +116,7 @@ const ContactForm: React.FC = () => {
           name="message"
           className={styles.textarea}
           rows={6}
-          placeholder="Write your message here..."
+          placeholder="Provide details about your project or question..."
           required
         ></textarea>
       </div>

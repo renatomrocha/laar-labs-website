@@ -1,19 +1,17 @@
 @import "./styles/colors.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Fira Code", "Source Code Pro", monospace;
+  font-family: "Inter", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* --- KEY CHANGES --- */
-  background: var(--background-light); /* Set the new light background */
-  color: var(--text-dark); /* Set the default text color to dark */
-  /* --- END CHANGES --- */
+  background: var(--background-light);
+  color: var(--text-dark);
 
   position: relative;
   min-height: 100vh;

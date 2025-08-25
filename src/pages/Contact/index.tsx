@@ -10,8 +10,9 @@ const Contact: React.FC = () => {
         <h1>Let's Build Something Together</h1>
         <p>
           Have a project in mind or a question about our software, mobile apps,
-          AI, or robotics services? Our team at LAAR-LABS is ready to help. Fill
-          out the form below, and we'll get back to you promptly.
+          AI, or robotics solutions? The team at LAAR-LABS is ready to help.
+          Just fill out the form below, and we'll get back to you as soon as
+          possible.
         </p>
       </section>
 

@@ -56,13 +56,14 @@
 }
 
 .navLink {
-  color: #c49b16;
+  color: #000000;
+
   text-decoration: none;
   padding: 0 1.5rem;
   height: 100%;
   display: flex;
   align-items: center;
-  border-right: 1px solid #333;
+
   transition: color 0.25s ease, background-color 0.25s ease;
 }
 
@@ -78,9 +79,9 @@
 }
 
 .logo {
-  height: 32px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
   width: auto;
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
 }
 
 .brandLink {
@@ -94,7 +95,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #c49b16;
+  color: #000000;
 }
 
 /* --- Hamburger Icon --- */

@@ -56,3 +56,60 @@
   background-color: #27ae60;
   transform: translateY(-1px);
 }
+
+.toggleGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.toggleButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background-color: #414141;
+  color: #ffffffa1;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.toggleButton input {
+  display: none;
+}
+
+.toggleButton span {
+  pointer-events: none;
+}
+
+.toggleButton input:checked + span {
+  color: #fff;
+}
+
+.toggleNote {
+  font-size: 0.85rem;
+  color: #838181;
+  margin-bottom: 0.45rem;
+}
+
+.selectInput {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #414141;
+  color: #ffffff;
+  font-size: 1rem;
+  appearance: none; /* hides default arrow on some browsers */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center; /* add some space from edge */
+  background-size: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.selectInput:focus {
+  border-color: var(--secondary-color, #2ecc71);
+  outline: none;
+}

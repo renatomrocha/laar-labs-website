@@ -34,7 +34,7 @@ const About: React.FC = () => {
           <div className={styles.serviceCard}>
             <h3>Web & Mobile Development</h3>
             <p>
-              We build custom web platforms that fit your exact needs — whether
+              We build custom web platforms that fit your exact needs - whether
               that's an internal tool, a customer-facing dashboard, or a
               full-scale online service. Our focus is on clean design, reliable
               performance, and systems that can grow as your business does.
@@ -61,7 +61,7 @@ const About: React.FC = () => {
           <div className={styles.serviceCard}>
             <h3>Hardware & IoT</h3>
             <p>
-              Software doesn't live in isolation — and neither do we. We design
+              Software doesn't live in isolation - and neither do we. We design
               and prototype embedded systems, connected devices, and hardware
               integrations that connect digital services with the physical
               world. Think sensors, controllers, and smart devices that actually
@@ -72,7 +72,7 @@ const About: React.FC = () => {
             <h3>Consulting</h3>
             <p>
               Sometimes the hardest part is knowing what to build. We help
-              companies figure out the right technology path — from choosing
+              companies figure out the right technology path - from choosing
               frameworks to planning architectures and spotting risks early. Our
               advice is practical, honest, and based on real hands-on
               experience.

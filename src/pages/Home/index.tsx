@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       </div>
       <Hero
         title="Building Smart Software & Hardware Solutions"
-        subtitle="We're a small team with a big vision — crafting web and mobile apps, intelligent systems, and robotics solutions. At LAAR-LABS, we blend software and hardware to help businesses turn ideas into working technology."
+        subtitle="We're a small team with a big vision - crafting web and mobile apps, intelligent systems, and robotics solutions. At LAAR-LABS, we blend software and hardware to help businesses turn ideas into working technology."
         imageUrl={heroImage}
         primaryCta={{ text: "Explore Our Solutions", link: "/about" }}
         secondaryCta={{ text: "Contact Us", link: "/contact" }}

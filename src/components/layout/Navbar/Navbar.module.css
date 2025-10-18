@@ -1,186 +1,187 @@
 @keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
 }
 
 /* --- Navbar --- */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  background-color: rgba(203, 203, 212, 0.95);
-  border-bottom: 1px solid #fccf06;
-  height: 56px;
-  flex-shrink: 0;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+	font-family: "Orbitron", "Roboto", sans-serif;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	background-color: rgba(203, 203, 212, 0.95);
+	border-bottom: 1px solid #fccf06;
+	height: 56px;
+	flex-shrink: 0;
+	backdrop-filter: blur(6px);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navbarBrand a {
-  color: #cccccc8f;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: flex;
-  align-items: center;
+	color: #cccccc8f;
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
 }
 
 .cursor {
-  animation: blink 1s steps(2, start) infinite;
-  color: var(--secondary-color);
-  margin-left: 2px;
+	animation: blink 1s steps(2, start) infinite;
+	color: var(--secondary-color);
+	margin-left: 2px;
 }
 
 /* --- Desktop Navigation --- */
 .navbarNav {
-  list-style: none;
-  display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	display: flex;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .navItem {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .navLink {
-  color: #000000;
+	color: #000000;
 
-  text-decoration: none;
-  padding: 0 1.5rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
+	text-decoration: none;
+	padding: 0 1.5rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
 
-  transition: color 0.25s ease, background-color 0.25s ease;
+	transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 .navLink:hover {
-  background-color: #c49b16;
-  color: #fff;
+	background-color: #c49b16;
+	color: #fff;
 }
 
 .activeLink {
-  color: #fff;
-  background-color: #c49b16;
-  border-top: 2px solid var(--secondary-color);
+	color: #fff;
+	background-color: #c49b16;
+	border-top: 2px solid var(--secondary-color);
 }
 
 .logo {
-  height: 40px; /* Adjust as needed */
-  width: auto;
-  margin-right: 0.75rem;
+	height: 40px; /* Adjust as needed */
+	width: auto;
+	margin-right: 0.75rem;
 }
 
 .brandLink {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
 }
 
 .brandText {
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #000000;
+	font-size: 1.2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #000000;
 }
 
 /* --- Hamburger Icon --- */
 .hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 6px;
-  background: none;
-  border: none;
-  padding: 4px;
-  transition: transform 0.3s ease;
+	display: none;
+	cursor: pointer;
+	flex-direction: column;
+	gap: 6px;
+	background: none;
+	border: none;
+	padding: 4px;
+	transition: transform 0.3s ease;
 }
 
 .bar {
-  width: 24px;
-  height: 3px;
-  background-color: #c49b16;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+	width: 24px;
+	height: 3px;
+	background-color: #c49b16;
+	border-radius: 2px;
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger.isOpen .bar:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+	transform: rotate(45deg) translateY(8px);
 }
 .hamburger.isOpen .bar:nth-child(2) {
-  opacity: 0;
+	opacity: 0;
 }
 .hamburger.isOpen .bar:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+	transform: rotate(-45deg) translateY(-8px);
 }
 
 /* --- Mobile Navigation --- */
 @media (max-width: 768px) {
-  .navbarNav {
-    position: fixed;
-    top: 56px; /* match navbar height */
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 56px);
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding-top: 2rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.35s ease, opacity 0.35s ease;
-  }
+	.navbarNav {
+		position: fixed;
+		top: 56px; /* match navbar height */
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 56px);
+		background-color: #ffffff;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1rem;
+		padding-top: 2rem;
+		transform: translateY(-100%);
+		opacity: 0;
+		pointer-events: none;
+		transition: transform 0.35s ease, opacity 0.35s ease;
+	}
 
-  .navbarNav.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
+	.navbarNav.active {
+		transform: translateY(0);
+		opacity: 1;
+		pointer-events: auto;
+	}
 
-  .navItem {
-    width: 90%;
-    text-align: center;
-  }
+	.navItem {
+		width: 90%;
+		text-align: center;
+	}
 
-  .navLink {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-    color: #c49b16;
-    border: none;
-    border-radius: 8px;
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
+	.navLink {
+		display: block;
+		width: 100%;
+		padding: 1rem;
+		font-size: 1.1rem;
+		color: #c49b16;
+		border: none;
+		border-radius: 8px;
+		transition: background-color 0.25s ease, color 0.25s ease;
+	}
 
-  .navLink:hover {
-    background-color: #838080;
-    color: #fff;
-  }
+	.navLink:hover {
+		background-color: #838080;
+		color: #fff;
+	}
 
-  .activeLink {
-    background-color: var(--secondary-color, #ffc107);
-    color: #fff;
-  }
+	.activeLink {
+		background-color: var(--secondary-color, #ffc107);
+		color: #fff;
+	}
 
-  .hamburger {
-    display: flex;
-  }
+	.hamburger {
+		display: flex;
+	}
 }

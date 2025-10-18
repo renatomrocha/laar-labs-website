@@ -1,0 +1,60 @@
+.comingSoonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(45deg, #fff, var(--primary-color));
+}
+
+.logoSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+}
+
+.mainLogo {
+	max-width: 320px; /* adjust size as needed */
+	height: auto;
+}
+
+.logoText {
+	font-family: "Orbitron", sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.cursor {
+	animation: blink 1s steps(2, start) infinite;
+	color: var(--secondary-color);
+	margin-left: 2px;
+}
+
+.cursorAnimated {
+	animation: blink 0.5s steps(2, start) infinite;
+	color: var(--secondary-color);
+	margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+	.logoText {
+		font-size: 2rem;
+	}
+	.mainLogo {
+		max-width: 280px; /* adjust size as needed */
+		height: auto;
+	}
+}
+
+@media (max-width: 400px) {
+	.logoText {
+		font-size: 1.6rem;
+	}
+	.mainLogo {
+		max-width: 240px; /* adjust size as needed */
+		height: auto;
+	}
+}

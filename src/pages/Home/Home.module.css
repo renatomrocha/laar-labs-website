@@ -1,86 +1,127 @@
 .pad {
-  padding: 2rem;
+	padding: 2rem;
+	background: linear-gradient(90deg, var(--secondary-color), #c9a222, #d1ab2e, #cfac3c, #c9af5b, #c7b16b, #c9af5b, #cfac3c, #d1ab2e, #c9a222, var(--secondary-color));
+	background-size: 200% 200%;
+	animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .servicesSection {
-  padding: 0rem 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
+	padding: 0rem 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 
 .servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	margin-top: 2rem;
 }
 
 .serviceCard {
-  background: #1e1e1e;
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid #333;
-  color: #ccc;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+	background: #1e1e1e;
+	opacity: 0.9;
+	padding: 2rem;
+	border-radius: 12px;
+	border: 1px solid #333;
+	color: #ccc;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .serviceCard h3 {
-  color: var(--secondary-color);
-  margin-bottom: 0.75rem;
+	color: var(--secondary-color);
+	margin-bottom: 0.75rem;
 }
 
 .logoSection {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
 }
 
 .mainLogo {
-  max-width: 320px; /* adjust size as needed */
-  height: auto;
+	max-width: 320px; /* adjust size as needed */
+	height: auto;
+}
+
+.logoText {
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.8rem;
+	font-weight: bold;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.cursor {
+	animation: blink 1s steps(2, start) infinite;
+	color: var(--secondary-color);
+	margin-left: 2px;
+}
+
+.cursorAnimated {
+	animation: blink 0.5s steps(2, start) infinite;
+	color: var(--secondary-color);
+	margin-left: 2px;
 }
 
 .serviceCard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-6px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	opacity: 1;
 }
 
 .headerSection {
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+}
+
+.sectionTitle {
+	font-size: 2rem;
+	margin-bottom: 1rem;
 }
 
 .headerSection h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .headerSection p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #2e2b2b;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	color: #2e2b2b;
 }
 
 .missionSection {
-  text-align: center; /* center everything inside */
-  padding: 0rem;
+	text-align: center; /* center everything inside */
+	padding: 0rem;
 }
 
 .missionSection p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #2e2b2b;
-  margin: 0 auto; /* center horizontally */
+	font-size: 1.1rem;
+	line-height: 1.6;
+	color: #2e2b2b;
+	margin: 0 auto; /* center horizontally */
 }
 
 .sectionDivider {
-  width: 100%;
-  height: 4px; /* thickness of the divider */
-  background: linear-gradient(
-    90deg,
-    var(--secondary-color, #2ecc71) 0%,
-    #dddcdcd3 100%
-  );
-  margin: 3rem 0; /* space above and below */
-  border-radius: 2px;
+	width: 100%;
+	height: 4px;
+	background: "transparent";
+	margin: 2.5rem 0; /* space above and below */
+	/* border-radius: 2px; */
 }

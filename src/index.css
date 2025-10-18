@@ -1,18 +1,18 @@
 @import "./styles/colors.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Inter", "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: "Exo+2", "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
-  background: var(--background-light);
-  color: var(--text-dark);
-
-  position: relative;
-  min-height: 100vh;
+	background: var(--background-light);
+	color: var(--text-dark);
+	height: "100%";
+	position: relative;
+	min-height: 100vh;
 }

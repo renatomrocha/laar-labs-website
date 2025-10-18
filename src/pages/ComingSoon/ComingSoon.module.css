@@ -58,3 +58,9 @@
 		height: auto;
 	}
 }
+
+@keyframes blink {
+	to {
+		visibility: hidden;
+	}
+}

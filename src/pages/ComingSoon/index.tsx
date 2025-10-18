@@ -45,7 +45,7 @@ const ComingSoon: React.FC = () => {
 					<img src={fullLogo} alt="LAAR LABS Logo" className={styles.mainLogo} />
 					<div className={styles.logoText}>
 						{textToDisplay}
-						<span className={styles.cursor}>_</span>
+						<span className={styles.cursorAnimated}>_</span>
 					</div>
 					<div style={{ marginTop: "3rem", fontSize: "1.5rem", fontWeight: "bold" }}>
 						<span>Coming Soon</span>

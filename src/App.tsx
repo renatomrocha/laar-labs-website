@@ -4,12 +4,11 @@ import styles from "./App.module.css"; // Import the new CSS module
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import About from "./pages/About";
-import ComingSoon from "./pages/ComingSoon";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 
 function App() {
-	return <ComingSoon />;
+	// return <ComingSoon />;
 
 	return (
 		<Router>
